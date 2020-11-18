@@ -1,0 +1,24 @@
+img{
+	width: 250px;
+	height: 250px;
+	border: 5px solid red;
+	border-color:red;
+	border-radius: 20px;
+}
+#img:hover{
+	transform: scale(1.2);
+}
+span{
+	text-align:center;
+}
+.detail{
+	text-align:center;
+	font-size:15px;
+}
+.box{
+	display:inline-block;
+	width:30%;
+}
+#warnings{
+	display:none;
+}

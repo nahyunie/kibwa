@@ -1,0 +1,41 @@
+.privacy{
+	padding:50px;
+	border:2px solid;
+	border-radius:6px;
+	margin:17px;
+	height:260px;
+}
+.textstyle{
+	font-size:20px;
+}
+.quizchart{
+	border:2px solid;
+	border-radius:6px;
+}
+.totaldetail{
+	margin:30px;
+}
+.title{
+	padding-left:30px;
+	padding-top:30px;
+}
+.subject{
+	padding:20px;
+	margin:17px;
+	border:2px solid;
+	border-radius:6px;
+	font-size:17px;
+	width:45%;
+	height:280px;
+}
+.btn-subject{
+	float:right;
+	background-color: blue;
+	color:white;
+	border:none;
+	border-radius:6px;
+	font-size:17px;
+}
+.sub{
+	padding:4px;
+}

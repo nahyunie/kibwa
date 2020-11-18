@@ -1,0 +1,136 @@
+#container {
+  height: 250px;
+  margin: 10px auto;
+  overflow: hidden;
+  position: relative;
+  width: 248px;
+}
+
+#container div {
+  position: absolute;
+}
+
+#beaker {
+  border: 10px solid #D4F4FA; /*비커  유리*/
+  border-top: 0;
+  border-radius: 0 0 30px 30px; /*비커 안에 들어 있는 용액*/
+  height: 200px;
+  left: 14px;
+  bottom: 0;
+  width: 200px;
+}
+
+#beaker:before,
+#beaker:after {
+  border: 10px solid #D4F4FA;
+  border-bottom: 0;
+  border-radius: 30px 30px 0 0;
+  content: '';
+  height: 30px;
+  position: absolute;
+  top: -40px;
+  width: 30px;
+}
+
+#beaker:before {
+  left: -50px;
+}
+
+#beaker:after {
+  right: -50px;
+}
+
+#liquid {
+  background-color: #F6F6F6;
+  border: 10px solid #F6F6F6;
+  border-radius: 0 0 20px 20px;
+  bottom: 0;
+  height: 170px;
+  overflow: hidden;
+  width: 180px;
+}
+
+#liquid:after {
+  background-color: rgba(255, 255, 255, 0.25);
+  bottom: -10px;
+  content: '';
+  height: 200px;
+  left: -40px;
+  position: absolute;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(15deg);
+  width: 110px;
+}
+
+#liquid .bubble {
+  -webkit-animation-name: bubble;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  background-color: #A0D9E2;
+  bottom: 0;
+  border-radius: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+@-webkit-keyframes bubble {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.2);
+    bottom: 80px;
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+    bottom: 160px;
+  }
+}
+.bubble:nth-child(1) {
+  left: 82px;
+  -webkit-animation-delay: 4.7766846526ms;
+  -webkit-animation-duration: 600ms;
+  -webkit-transform: scale(0.7);
+}
+
+.bubble:nth-child(2) {
+  left: 22px;
+  -webkit-animation-delay: 16.9373065905ms;
+  -webkit-animation-duration: 900ms;
+  -webkit-transform: scale(1.2);
+}
+
+.bubble:nth-child(3) {
+  left: 19px;
+  -webkit-animation-delay: 2.5352040267ms;
+  -webkit-animation-duration: 900ms;
+  -webkit-transform: scale(1);
+}
+
+.bubble:nth-child(4) {
+  left: 135px;
+  -webkit-animation-delay: 2.4110360885ms;
+  -webkit-animation-duration: 1200ms;
+  -webkit-transform: scale(0.4);
+}
+
+.bubble:nth-child(5) {
+  left: 180px;
+  -webkit-animation-delay: 24.9479020715ms;
+  -webkit-animation-duration: 1300ms;
+  -webkit-transform: scale(0.6);
+}
+
+.bubble:nth-child(6) {
+  left: 42px;
+  -webkit-animation-delay: 27.8777635474ms;
+  -webkit-animation-duration: 800ms;
+  -webkit-transform: scale(0.5);
+}
+
+.bubble:nth-child(7) {
+  left: 23px;
+  -webkit-animation-delay: 6.4313045597ms;
+  -webkit-animation-duration: 800ms;
+  -webkit-transform: scale(0.7);
+}

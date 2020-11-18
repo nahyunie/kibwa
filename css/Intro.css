@@ -1,0 +1,46 @@
+/* Introduce */
+#img{
+    padding:10px;
+}
+.page-header { /* �젣紐� */
+	text-align:center;
+    width: 100%;
+    margin: 20px auto;
+}
+.intro{
+	display:inline-block; /* 諛곗튂 */
+}
+.totalintro{ /* 諛곗튂 */
+	width:100%;
+	text-align:center;
+}
+/* 4媛� 洹몃┝ */
+.total-contain {
+    width:100%;
+    text-align:center;
+}
+.img-contain {
+    display:inline-block; /* 諛곗튂 */
+    border-radius: 40px 40px;
+}
+.intro-contain {
+    display:inline-block;
+}
+.img-box {
+    border-radius: 40px 40px;
+}
+
+/* 以묒븰 */
+.mid-contain {
+    width:100%;
+}
+
+.mid-text {
+    text-align: center;
+}
+.mid-box {
+    width: 100%;
+}
+.total-text {
+    text-align: center;
+}

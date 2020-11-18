@@ -1,0 +1,48 @@
+.wrap {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  left: 47%;
+  margin-left: -50px;
+  top: 48%;
+  margin-top: -90px;
+}
+
+/*.drop:active {
+  width: 25px;
+  height: 25px;
+  left: 20%;
+  margin-left: -20px;
+  position: absolute;
+  animation: drop 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s 1;
+  animation-fill-mode: forwards;
+}*/
+
+.drop {
+  width: 22px;
+  height: 22px;
+  left: 20%;
+  margin-left: -20px;
+  position: absolute;
+  animation: drop 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s 3;
+  animation-fill-mode: forwards;
+}
+
+.drop circle {
+  fill: #D5EBF1;
+}
+
+@keyframes drop {
+  0% {
+    transform: scale3d(0.01,0.01,0.01) translateY(0)
+  }
+  10% {
+    transform: scale3d(1,1,1) 
+  }
+  44% {
+    transform: scale3d(1,1,1) translateY(200px)
+  }
+  100% {
+    transform: scale3d(1,1,1) translateY(200px)
+  }
+}
